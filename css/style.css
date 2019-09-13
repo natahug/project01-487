@@ -45,8 +45,9 @@ body{
 }
 
 .white-content{
-    
+    margin:0;
     border: 3px dotted blue;
+    border-radius:5px;
 }
 .blue-box{
    
@@ -60,8 +61,9 @@ body{
     color: #fe7f13;
 }
 #task-title{
+    padding-top:20px;
     color: #2191e9;
-    font-size: 18pt;
+    font-size: 20pt;
 }
 .numbers{
 
@@ -86,7 +88,8 @@ body{
 }
 #gear{
     float:right;
-    padding:8px;
+    padding-top:30px;
+ 
 }
 .small-text{
     margin:0;
@@ -103,6 +106,54 @@ body{
     color:#fff;
     background-color:#fff;
     height:1px;
-
-  
+}
+#graph{
+    height:325px;
+    width:550px;
+    padding:0;
+    border-right: 1px solid #eeeeee;
+}
+#big-graph-container{
+    padding-right:0;
+    
+}
+.circle-graphs{
+    height:130px;
+    margin:0;
+    padding-left:25px;
+    padding-bottom: 10px;
+}
+.circle-labels{
+    font-size: 10pt;
+    text-align: center;
+}
+.checkbox-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom:1px solid #eeeeee;
+}
+.sm{
+    padding:10px;
+}
+.outline{
+    margin-top:30px;
+    border: 1px solid black;
+    border-radius:5px;
+    padding:0;
+    
+}
+.blue-div{
+    height:50px;
+    background-color: #2191e9;
+    text-align: center;
+    color:white;
+}
+.graph-green-orange{
+    width:200px;
+}
+.graph-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

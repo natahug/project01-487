@@ -7,7 +7,7 @@ body{
     background-color:#2191e9;
 }
 .bottom-gray-footer{
-    height:30px;
+   
     border: 1px solid black;
 }
 .dashboard{
@@ -22,7 +22,7 @@ body{
 .content-container{
     margin-top:10px;
     margin-bottom:20px;
-    height:700px;
+  
     border: 1px solid red;
 }
 .dash-row{
@@ -45,14 +45,64 @@ body{
 }
 
 .white-content{
-    height: 400px;
+    
     border: 3px dotted blue;
 }
 .blue-box{
-    height: 200px;
+   
     border: 3px dotted pink;
     margin-top:10px;
 }
-.anouncements, .lorem, .arrows, .analytics, .tasks, .box, .test{
+.lorem, .arrows, .analytics, .box, .row-task, .tasks{
     border: 1px solid blueviolet;
+}
+.anouncements{
+    color: #fe7f13;
+}
+#task-title{
+    color: #2191e9;
+    font-size: 18pt;
+}
+.numbers{
+
+    height:20px;
+    width:20px;
+}
+#gray-one{
+   
+    font-size: 12pt;
+    color:#cccccc;
+}
+.other-blues{
+    font-size: 12pt;
+    color: #2191e9;
+}
+.icon-man{
+  
+   float:right;
+    height:25px;
+    width:50px;
+    
+}
+#gear{
+    float:right;
+    padding:8px;
+}
+.small-text{
+    margin:0;
+    font-size:6pt;
+}
+.recs{
+    color:black;
+    font-size: 10pt;
+    margin:0;
+}
+.dotted{
+    border:none;
+    border-top:1px dotted #cccccc;
+    color:#fff;
+    background-color:#fff;
+    height:1px;
+
+  
 }

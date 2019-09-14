@@ -50,10 +50,24 @@ body{
     border-radius:5px;
 }
 .blue-box{
-   
+   background-color: #2191e9;
     border: 3px dotted pink;
     margin-top:10px;
+  
 }
+.box{
+    border:5px solid red;
+    
+    
+}
+.img-div{
+    height:160px;
+    background-color:white;
+    border-radius: 5px;
+    margin:10px;
+}
+
+
 .lorem, .arrows, .analytics, .box, .row-task, .tasks{
     border: 1px solid blueviolet;
 }
@@ -95,6 +109,11 @@ body{
     margin:0;
     font-size:6pt;
 }
+.small-white-text{
+    font-size:8pt;
+    color:white;
+    margin:0;
+}
 .recs{
     color:black;
     font-size: 10pt;
@@ -108,8 +127,9 @@ body{
     height:1px;
 }
 #graph{
-    height:325px;
-    width:550px;
+    /* height:325px;
+    width:550px; */
+    width:100%;
     padding:0;
     border-right: 1px solid #eeeeee;
 }
@@ -118,7 +138,7 @@ body{
     
 }
 .circle-graphs{
-    height:130px;
+    width:100%;
     margin:0;
     padding-left:25px;
     padding-bottom: 10px;
@@ -137,23 +157,76 @@ body{
     padding:10px;
 }
 .outline{
-    margin-top:30px;
+    margin-top:50px;
     border: 1px solid black;
     border-radius:5px;
-    padding:0;
-    
+    padding:0;  
 }
 .blue-div{
     height:50px;
     background-color: #2191e9;
     text-align: center;
     color:white;
+    z-index: 5;
+}
+.blue-text{
+    margin:0;
+    font-size: 15pt;
 }
 .graph-green-orange{
-    width:200px;
+    width:100%;
 }
 .graph-div{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.spacer{
+    position: relative;
+    height:50px;
+}
+.avatar{
+  position:absolute;
+  z-index: 2;
+}
+.box{
+    height:250px;
+    padding:10px;
+    padding-top:25px;
+   
+}
+.bluebox{
+    margin-top:10px;
+    border-radius: 5px;
+    background-color: #2191e9;
+    height:200px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bluebox p{
+    color:white;
+    padding-left:50px;
+    padding-right:50px;
+}
+.arrow-nav-left, .arrow-nav-right{
+    position: absolute;
+}
+.green-box{
+    background-color:#33cc66;
+    position:absolute;
+    margin-left: auto;
+    margin-right: auto;
+    top:42%;
+    left: 10%;
+    right: 10%;
+    padding:0;
+    border-radius: 5px;
+}
+.green-box p{
+    color:white;
+    text-align: center;
+    margin: 4px;
 }

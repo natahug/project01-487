@@ -9,6 +9,25 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="css/style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet">
+    <script>/* When the user clicks on the button, 
+            toggle between hiding and showing the dropdown content */
+            function myFunction() {
+              document.getElementById("myDropdown").classList.toggle("show");
+            }
+            
+            // Close the dropdown menu if the user clicks outside of it
+            window.onclick = function(event) {
+              if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                  var openDropdown = dropdowns[i];
+                  if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                  }
+                }
+              }
+            }</script>
 </head>
 <body>
 
@@ -16,26 +35,30 @@
     <div class = "row dashboard">
         
         <div class="col-md-3"></div>
-            <div class="col-md-1 icon">
-                <img src= "img/blue1.png">
+        
+            <div class="col-md-1 icon1">
+                <!-- <img class= "blue" src= "img/blue1.png"> -->
+
             </div>
-            <div class="col-md-1 icon">
-                    <img src= "img/blue2.png">
+            <div class="col-md-1 icon2">
+                    <!-- <img src= "img/blue2.png"> -->
             </div>
-            <div class="col-md-1 icon">
-                    <img src= "img/blue3.png">
+            <div class="col-md-1 icon3">
+                    <!-- <img src= "img/blue3.png"> -->
             </div>
-            <div class="col-md-1 icon">
-                    <img src= "img/blue4.png">
+            <div class="col-md-1 icon4">
+                    <!-- <img src= "img/blue4.png"> -->
             </div>
-            <div class="col-md-1 icon">
-                    <img src= "img/blue5.png">
+            <div class="col-md-1 icon5">
+                    <!-- <img src= "img/blue5.png"> -->
             </div>
-            <div class="col-md-1 icon">
-                    <img src= "img/blue6.png">
+            <div class="col-md-1 icon6">
+                    <!-- <img src= "img/blue6.png"> -->
             </div>
              <div class="col-md-3"></div>
+             <img id = "marker-triangle" src = "img/Marker.png"> 
     </div>
+
     <div class= "container content-container">
         <div class="row dash-row">
             <div class="col-md-12 justify-content-between tester">
@@ -163,13 +186,21 @@
                     </div>
                     <div class="col-md-8 analytics">
                             <p id ="task-title">Analytics</p>
-                            <div class="row">
+                            <div class="row with-drop">
                                     <div class="col-6 col-sm-6">
                                         <p>ACTIVITY</p>
                                     </div>
                                     <div class="col-6 col-sm-6">
-                                            <button class = "dropdown">make a dropdown</button>
+                                    <div class="dropdown">
+                                            <button onclick="myFunction()" class="dropbtn">06/28/11 - 07/21/11 <img src="img/down_arrow.png"onclick="myFunction()"></button>
+                                            <div id="myDropdown" class="dropdown-content">
+                                              <a href="#">Link 1</a>
+                                              <a href="#">Link 2</a>
+                                              <a href="#">Link 3</a>
+                                            </div>
+                                            <!-- <button class = "dropdown">make a dropdown</button> -->
                                     </div>
+                                </div>
                                     <div class="col-2 col-sm-5"></div>    
                                 </div>
                                 <div></div>
@@ -190,24 +221,29 @@
                                        
                                             <input type="checkbox" checked="checked">
                                             <span class="checkmark"></span>
-                                            <label class = "sm">Facebook</label>
+                                            <div class="fb">
+                                            <label class = "sm">Facebook</label></div>
                         
                                             <input type="checkbox">
                                             <span class="checkmark"></span>
+                                            <div class="twitter">
                                             <label class = "sm">Twitter</label>
+                                        </div>
                                         
                                             
                                            
                                             <input type="checkbox">
                                             <span class="checkmark"></span>
+                                            <div class="foursquare">
                                             <label class = "sm">Foursquare</label>
-                                  
+                                        </div>
                                             
                                         
                                             <input type="checkbox">
                                             <span class="checkmark"></span>
+                                            <div class="google">
                                             <label class = "sm">Google+</label>
-                                      
+                                        </div>
                                         </div>
                                 </div>
                                 <div class="row">
@@ -252,10 +288,10 @@
                                         <div class="col-md-12 box">
                                             <div class="bluebox">
                                                 <img src="img/left_semicircle.png">
-                                                <img class = "arrow-nav-left" src = "img/left_arrow.png" style= "right:97%;">
+                                                <img class = "arrow-nav-left" src = "img/left_arrow.png" style= "right:95%;">
                                                 <p>DID YOU KNOW?<br>
                                                         Maecenas sed diam eget risus varius blandit sit amet non magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam porta sem malesuada magna mollis euismod.</p>
-                                                <img class = "arrow-nav-right" src = "img/right_arrow.png"style= "left:97%;">
+                                                <img class = "arrow-nav-right" src = "img/right_arrow.png"style= "left:95%;">
                                                 <img src="img/right_semicircle.png">
                                                 
                                             </div>
@@ -272,15 +308,22 @@
         
             <div class="col-md-4 box">
                 <div class="img-div">
-                    <img src="img/green_overlay.png">
-                    <p style= "position: absolute;color:#33cc66;font-size:16pt;left:55%;bottom:50%;text-align: right;">Watch what<br> you say.</p>
+                    <img src="img/green_overlay.png"style="height: 100%;">
+                    <p style= "position: absolute;color:#33cc66;font-size:16pt;left:55%;bottom:25%;text-align: right;">Watch what<br> you say.</p>
+                    <p style = "position: absolute;
+                    left: 40%;
+                    bottom: 10%;
+                    font-size: 12pt;">Message Management</p>
                 </div>
             </div>
             <div class="col-md-4 box ">
                     <div class="img-div">
                             <img src="img/people_overlay.png"style="position: absolute;
-                            left: 15%;
-                            bottom: 21%;">
+                                margin-left: auto;
+                                margin-right: auto;
+                                bottom: 0%;
+                                left: 0;
+                            right: 0;">
                             <div class ="green-box">
                                 <p>See what others are doing with us.</p>
                             </div>
@@ -288,7 +331,14 @@
             </div>
             <div class="col-md-4 box">
                     <div class="img-div">
-                            <img src="img/orange_overlay.png"style="position:absolute;left:34.5%">
+                            <img src="img/orange_overlay.png"style="height: 100%;
+                            float: right;">
+                            <p style= "position: absolute;
+                            color: #ff8a00;
+                            right: 60%;
+                            bottom: 25%;
+                            text-align: left;
+                            font-size: 16pt;">Version 2.0 <br>is coming</p>
                     </div>
             </div>
         </div>
@@ -298,6 +348,6 @@
 <div class ="row bottom-gray-footer"></div>
 </div>
 
-   
+
 </body>
 </html>

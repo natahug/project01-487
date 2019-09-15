@@ -6,6 +6,20 @@ body{
     height:40px;; 
     background-color:#2191e9;
 }
+.mini-of-raleigh p{
+    color:white;
+    float:right;
+    padding-right:10px;
+    padding-top:10px;
+}
+.help{
+    border-left:1px solid gray;
+    border-right:1px solid gray;
+    padding:10px;
+}
+.white-gear{
+    padding:10px;
+}
 .bottom-gray-footer{
    
     border: 1px solid black;
@@ -13,7 +27,10 @@ body{
 .dashboard{
     position: relative;
     height:100px;
-    background-color: #124570;
+    /* background-color: #124570; */
+    background-image: url("../img/background.png");
+    background-repeat: no-repeat;
+    background-size:100%;
     padding:20px;
     padding-bottom: 0;
 }
@@ -357,3 +374,57 @@ body{
   
   /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
   .show {display:block;}
+
+
+
+  .menu-btn span {
+	display: block;
+	width: 19px;
+	height: 3px;
+	margin: 4px 0;
+	background: rgb(255,255,255);
+}
+
+.responsive-menu{
+	display: none;
+  background-color: #444;
+  border-style: solid;
+  border-color: #252525;
+  border-width: 5px;
+  padding: 5px;
+  width: 300px;
+  height: 150px;
+  font-size: 20px;
+}
+  .responsive-menu ul{
+    margin: 0px 0px 0px -40px;
+
+  }
+  .responsive-menu li {
+    background-color: #383838;
+    margin: 4px;
+    padding: 5px;
+    color: white;
+    list-style-type: none;
+  }
+
+
+.expand {
+	display: block !important; 
+}
+
+
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #111;
+  }
+
+
+/* //Navbar body */
+.navbar {
+    margin: -10px;
+    padding: 15px;
+    max-height: 25px;
+    background-color: #333;
+}

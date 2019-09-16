@@ -345,6 +345,10 @@ body{
     background-image: url("../img/green6.png");
     background-repeat: no-repeat;
 }
+
+/* dropdown css from https://www.w3schools.com/howto/howto_js_dropdown.asp */
+
+
 .dropbtn {
     background-color:transparent;
     font-size: 12px;
@@ -394,6 +398,13 @@ body{
   /* .checkmark:before{
       content:url(../img/empty_check.png);
   }  */
+
+
+  /* end dropdown css */
+
+
+
+
 :checked + .checkmark:before {
 content: url(../img/check.png);
   

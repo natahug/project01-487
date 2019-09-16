@@ -27,6 +27,24 @@
                   }
                 }
               }
+            }
+            
+            function myFunction2() {
+              document.getElementById("myDropdown2").classList.toggle("show");
+            }
+            
+            // Close the dropdown menu if the user clicks outside of it
+            window.onclick = function(event) {
+              if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                  var openDropdown = dropdowns[i];
+                  if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                  }
+                }
+              }
             }</script>
 </head>
 <body>
@@ -42,7 +60,18 @@
     </div>
     <div class = "row dashboard">
         
-        <div class="col-md-3"></div>
+        <div class="col-md-3">
+                <div class="dropdown secret">
+                        <button onclick="myFunction()" class="dropbtn"><img src="img/down_arrow.png"onclick="myFunction()"></button>
+                        <div id="myDropdown" class="dropdown-content">
+                          <a href="#">Customers</a>
+                          <a href="#">Messages</a>
+                          <a href="#">Promotions</a>
+                          <a href="#">Page Creator</a>
+                          <a href="#">Analytics</a>
+                        </div>
+                        </div>
+        </div>
         
             <div class="col-md-1 icon1">
                 <!-- <img class= "blue" src= "img/blue1.png"> -->
@@ -143,7 +172,7 @@
                                         <hr>
                                         <div class="row">
                                                 <div class="col-8 col-sm-6">
-                                                    <p id ="task-title">Reccomendations</p>
+                                                    <p id ="task-title">Recommendations</p>
                                                 </div>
                                                 <div class="col-4 col-sm-6"></div>
                                         </div>
@@ -196,15 +225,15 @@
                             <p id ="task-title">Analytics</p>
                             <div class="row with-drop">
                                     <div class="col-6 col-sm-6">
-                                        <p>ACTIVITY</p>
+                                        <p style="color:gray;">ACTIVITY</p>
                                     </div>
                                     <div class="col-6 col-sm-6">
                                     <div class="dropdown">
-                                            <button onclick="myFunction()" class="dropbtn">06/28/11 - 07/21/11 <img src="img/down_arrow.png"onclick="myFunction()"></button>
-                                            <div id="myDropdown" class="dropdown-content">
-                                              <a href="#">Link 1</a>
-                                              <a href="#">Link 2</a>
-                                              <a href="#">Link 3</a>
+                                            <button onclick="myFunction2()" class="dropbtn">06/28/11 - 07/21/11 <img src="img/down_arrow.png"onclick="myFunction2()"></button>
+                                            <div id="myDropdown2" class="dropdown-content">
+                                              <a href="#">06/28/12 - 07/21/12 </a>
+                                              <a href="#">06/28/13 - 07/21/13 </a>
+                                              <a href="#">06/28/14 - 07/21/14 </a>
                                             </div>
                                             <!-- <button class = "dropdown">make a dropdown</button> -->
                                     </div>
@@ -267,13 +296,13 @@
                                          </div>
                                            
                                             <div class = "blue-div">
-                                                <img src = "img/left_banner.png"style= "position:absolute;
+                                                <img class = "disappear" src = "img/left_banner.png"style= "position:absolute;
                                                 left: -5%;
                                                 top: 26%;
                                             ">
                                                 <p class = "blue-text">75 CONTACTS</p>
                                                 <p class = "small-white-text">4 INFLUENCERS</p>
-                                                <img src = "img/right_banner.png"style= "position:absolute;
+                                                <img class = "disappear" src = "img/right_banner.png"style= "position:absolute;
                                                 right: -5%;
                                                 top: 26%;
                                             ">
@@ -292,13 +321,13 @@
                                                         right: 0;bottom:-1.9px;" src = "img/orange_avi.png">
                                                  </div>
                                                 <div class = "blue-div">
-                                                        <img src = "img/left_banner.png"style= "position:absolute;
+                                                        <img class = "disappear" src = "img/left_banner.png"style= "position:absolute;
                                                         left: -5%;
                                                         top: 26%;
                                                     ">
                                                         <p class = "blue-text">17 CUSTOMERS</p>
                                                         <p class = "small-white-text">0 INFLUENCERS</p>
-                                                        <img src = "img/right_banner.png"style= "position:absolute;
+                                                        <img class = "disappear" src = "img/right_banner.png"style= "position:absolute;
                                                 right: -5%;
                                                 top: 26%;
                                             ">

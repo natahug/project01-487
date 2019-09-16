@@ -21,8 +21,9 @@ body{
     padding:10px;
 }
 .bottom-gray-footer{
+   background-color:#f4f4f4;
+   border-top:1px solid black;
    
-    border: 1px solid black;
 }
 .dashboard{
     position: relative;
@@ -68,12 +69,17 @@ body{
 .white-content{
     margin:0;
     border: 8px solid #eeeeee;
-    border-radius:5px;
+    border-radius:5px!important;
+    border-image: 
+    linear-gradient( 
+      #eeeeee, transparent)1;
 }
 .blue-box{
    background-color: #2191e9;
-    border: 3px dotted pink;
-    margin-top:10px;
+    /* border: 3px dotted pink; */
+    margin: 9px;
+    margin-top: 0;
+
   
 }
 
@@ -132,6 +138,7 @@ body{
 .small-text{
     margin:0;
     font-size:6pt;
+    color:black;
 }
 .small-white-text{
     font-size:8pt;
@@ -181,10 +188,12 @@ body{
     margin:5px;
 }
 .outline{
+    position: relative;
     margin-top:50px;
     border: 1px solid black;
     border-radius:5px;
-    padding:0;  
+    padding:0; 
+    z-index: 50000; 
 }
 .blue-div{
     height:50px;
@@ -377,54 +386,48 @@ body{
 
 
 
-  .menu-btn span {
-	display: block;
-	width: 19px;
-	height: 3px;
-	margin: 4px 0;
-	background: rgb(255,255,255);
-}
-
-.responsive-menu{
-	display: none;
-  background-color: #444;
-  border-style: solid;
-  border-color: #252525;
-  border-width: 5px;
-  padding: 5px;
-  width: 300px;
-  height: 150px;
-  font-size: 20px;
-}
-  .responsive-menu ul{
-    margin: 0px 0px 0px -40px;
-
+  input[type="checkbox"]{
+    display:none;
   }
-  .responsive-menu li {
-    background-color: #383838;
-    margin: 4px;
-    padding: 5px;
-    color: white;
-    list-style-type: none;
+  .checkmark:before{
+      content:url(../img/empty_check.png);
+  } 
+:checked + .checkmark:before {
+content: url(../img/check.png);
+  
   }
 
-
-.expand {
-	display: block !important; 
-}
-
-
-
-/* Change the link color to #111 (black) on hover */
-li a:hover {
-    background-color: #111;
+  #profile{
+      padding:5px;
+      border: 1px solid black;
+      border-radius: 5px;
   }
+ input[type=text]{
+     background-image: url(../img/searchicon.png);
+     background-repeat: no-repeat;
+     background-position: right;
+ }
 
+ @media (max-width: 440px) {
+     .icon1, .icon2, .icon3, .icon4, .icon5, .icon6{
+         display:none!important ;
+     }
+ }
 
-/* //Navbar body */
-.navbar {
-    margin: -10px;
-    padding: 15px;
-    max-height: 25px;
-    background-color: #333;
+.tuts-sups-blog{
+    float:right;
+    padding:10px;
+    color:gray;
+}
+.ariel{
+    color:#2191e9;
+}
+.ariel-container, .pullup{
+    padding:10px; 
+}
+.pullup{
+    float:right;
+}
+.default{
+    margin:20px;
 }

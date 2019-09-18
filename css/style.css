@@ -456,3 +456,41 @@ content: url(../img/check.png);
     margin:20px;
 }
 
+/* 
+/* Fading animation */
+
+/* .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  } */
+/* .slideIn {
+    -webkit-animation-name: slidein;
+    -webkit-animation-duration: 3;
+    animation-name: slidein;
+    animation-duration: 3s;
+  }
+  
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%; 
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  } */
+

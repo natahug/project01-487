@@ -1,19 +1,27 @@
-/* When the user clicks on the button, 
-toggle between hiding and showing the dropdown content */
-function myFunction() {
-    document.getElementById("myDropdown").classList.toggle("show");
-  }
+var slideIndex = 1;
+
+showSlides(slideIndex);
+
+function plusSlides(n){
+  showSlides(slideIndex+=n);
+}
+
+
+function showSlides(n){
+  var i;
+  var slides = document.getElementsByClassName("text-slides");
   
-  // Close the dropdown menu if the user clicks outside of it
-  window.onclick = function(event) {
-    if (!event.target.matches('.dropbtn')) {
-      var dropdowns = document.getElementsByClassName("dropdown-content");
-      var i;
-      for (i = 0; i < dropdowns.length; i++) {
-        var openDropdown = dropdowns[i];
-        if (openDropdown.classList.contains('show')) {
-          openDropdown.classList.remove('show');
-        }
-      }
-    }
-  }
+  if(n>slides.length){
+    slideIndex = 1; //reset essentially back to image #1
+}
+if(n<1){
+    slideIndex = slides.length; //making last image at index 0
+}
+
+for(i=0;i<slides.length;i++){
+    slides[i].style.display = "none";
+} //used to hide slides you don't need each individual slide
+
+  slides[slideIndex-1].style.display = "block"; //showing 1 slide
+ 
+}

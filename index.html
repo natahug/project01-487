@@ -336,12 +336,20 @@
                                     <div class="row">
                                         <div class="col-md-12 box">
                                             <div class="bluebox">
-                                               <a href= "#"><img src="img/left_semicircle.png"></a> 
-                                               <a href= "#"><img class = "arrow-nav-left" src = "img/left_arrow.png" style= "right:95%;bottom: 43%;"></a>
-                                                <p>DID YOU KNOW?<br>
+                                             <img onclick="plusSlides(-1)"src="img/left_semicircle.png">
+                                               <img class = "arrow-nav-left"onclick="plusSlides(-1)" src = "img/left_arrow.png" style= "right:95%;bottom: 43%;">
+                                                <p class = "text-slides"> 1/3 DID YOU KNOW?<br>
                                                         Maecenas sed diam eget risus varius blandit sit amet non magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam porta sem malesuada magna mollis euismod.</p>
-                                                        <a href= "#"> <img class = "arrow-nav-right" src = "img/right_arrow.png"style= "left:95%;bottom: 43%;"></a>
-                                                        <a href= "#"> <img src="img/right_semicircle.png"></a>
+
+                                                        <p class = "text-slides"> 2/3 BUT DID YOU KNOW?<br>
+                                                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+
+                                                            <p class = "text-slides"> 3/3 AND ALSO THIS?<br>
+                                                                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum..</p>
+
+
+                                                        <img class = "arrow-nav-right" onclick="plusSlides(1)"src = "img/right_arrow.png"style= "left:95%;bottom: 43%;">
+                                                       <img onclick="plusSlides(1)"src="img/right_semicircle.png">
                                                 
                                             </div>
                                         </div>
@@ -414,6 +422,6 @@
 </div>
 </div>
 
-
+<script src = "js/main.js"></script>
 </body>
 </html>

@@ -90,10 +90,17 @@ body{
     border-radius: 5px;
     margin:10px;
 }
-
-
-.lorem, .arrows, .analytics,  .row-task, .tasks, .anouncements{
+#first-an{
+    display:block;
+}
+#second-an{
+    display:none;
+}
+ .arrows, .analytics,  .row-task, .tasks, .anouncements{
     border: 1px solid #eeeeee;
+    padding:10px;
+}
+.lorem{
     padding:10px;
 }
 .anouncements{
@@ -456,6 +463,22 @@ content: url(../img/check.png);
     margin:20px;
 }
 
+.pop{
+    display:none;
+    width:150px;
+    height:80px;
+    position: absolute;
+    left: 15%;
+    bottom: 40%;
+}
+.pop2{
+    display:none;
+    width:150px;
+    height:80px;
+    position: absolute;
+    left: 15%;
+    bottom: -10%;
+}
 /* 
 /* Fading animation */
 
@@ -493,4 +516,18 @@ content: url(../img/check.png);
       width: 100%;
     }
   } */
+
+  .bx-wrapper .bx-prev{
+    background: url(../img/left_button.png) no-repeat 0 -32px !important;
+  }
+  #prev{
+      height:25px;
+      width:25px;
+      background: url(../img/left_button.png) no-repeat;
+  }
+  #next{
+    height:25px;
+    width:25px;
+    background: url(../img/right_button.png) no-repeat; 
+  }
 

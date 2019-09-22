@@ -25,3 +25,37 @@ for(i=0;i<slides.length;i++){
   slides[slideIndex-1].style.display = "block"; //showing 1 slide
  
 }
+
+// $(document).ready(function(){
+//   console.log("hey");
+  // $("#first").hide();
+
+  // $("button").click(function(){
+  //     theCount += 1;
+  //     console.log("clicked " + theCount);
+  //     $("#first").hide();
+
+    $(document).ready(function(){
+      
+      $("#next").click(function(){
+        $("#first-an").hide();
+        $("#second-an").show();
+      });
+      $("#prev").click(function(){
+        $("#first-an").show();
+        $("#second-an").hide();
+      })
+      $(".channel").mouseenter(function(){
+        $(".pop").css("display","block");
+      })
+      $(".channel").mouseleave(function(){
+        $(".pop").css("display","none");
+      })
+
+      $(".ref").mouseenter(function(){
+        $(".pop2").css("display","block");
+      })
+      $(".ref").mouseleave(function(){
+        $(".pop2").css("display","none");
+      })
+    });

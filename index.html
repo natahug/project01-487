@@ -101,12 +101,17 @@
         </div>
         <div class ="container white-content">
             <div class="row">
-                <div class="col-md-2 anouncements">ANNOUNCEMENTS</div>
-                <div class="col-md-9 lorem">Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus sagittis lacus</div>
-                <div class="col-md-1 arrows">
-                    <a href= "#"> <img src= "img/left_button.png"></a>
-                    <a href= "#"> <img src= "img/right_button.png"></a>
+                    <div class="col-md-2 anouncements"><p>ANNOUNCEMENTS</p></div>
+                
+                
+                <div class="col-md-9 lorem">
+                    <p id = "first-an">Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus sagittis lacus</p>
+                    <p id = "second-an">Nascetur ridiculus mus. Vivamus sagittis lacus</p>
                 </div>
+                <div class="col-md-1 arrows">
+                    <button id = "prev"></button>
+                    <button id = "next"></button>
+                </div> 
             </div>
                 <div class="row">
                     <div class="col-md-4 tasks">
@@ -241,11 +246,13 @@
                                     <div id= big-graph-container class="col-8 col-sm-9">
                                         <img id = "graph" src="img/graph.png">
                                     </div>
-                                    <div class="col-4 col-sm-3">
-                                        <p class = "circle-labels">CHANNELS</p>
+                                    <div class="col-4 col-sm-3" style = "position:relative;">
+                                        <p class = "circle-labels channel">CHANNELS</p>
                                         <img class = "circle-graphs"src = "img/1st-circle.png">
-                                        <p class = "circle-labels">REFERRALS</p>
+                                        <img class = "pop" src = "img/popover.png">
+                                        <p class = "circle-labels ref">REFERRALS</p>
                                         <img class = "circle-graphs"src = "img/2nd-circle.png">
+                                        <img class = "pop2" src = "img/popover.png">
                                     </div>
                                       
                                 </div>
@@ -422,6 +429,10 @@
 </div>
 </div>
 
+<script src= "https://code.jquery.com/jquery-3.4.1.min.js"
+integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
 <script src = "js/main.js"></script>
 </body>
 </html>
